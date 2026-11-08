@@ -1,0 +1,16 @@
+# 忽略虚拟环境
+.venv/
+venv/
+env/
+
+# 忽略环境变量配置
+.env
+
+# 忽略 Python 编译文件
+__pycache__/
+*.pyc
+*.pyo
+
+# 忽略本地聊天记录和数据库
+mission/chat_history/
+mission/chroma_guides_db/
