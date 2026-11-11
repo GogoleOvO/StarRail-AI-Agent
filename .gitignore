@@ -1,16 +1,56 @@
-# 忽略虚拟环境
-.venv/
-venv/
-env/
-
-# 忽略环境变量配置
-.env
-
-# 忽略 Python 编译文件
+# ===== Python =====
 __pycache__/
-*.pyc
-*.pyo
+*.py[cod]
+*$py.class
+*.so
 
-# 忽略本地聊天记录和数据库
+# 虚拟环境
+venv/
+.venv/
+env/
+ENV/
+
+# 打包分发
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== 环境变量 / 密钥 =====
+.env
+.env.*
+*.key
+*.pem
+
+# ===== 运行时生成的数据 =====
+# 聊天记录
 mission/chat_history/
+chat_history/
+
+# 角色好感度存档
+mission/companion_data/
+companion_data/
+
+# 评测报告
+eval_report.md
+
+# 向量库（体积大，自行构建）
 mission/chroma_guides_db/
+chroma_guides_db/
+
+# 角色数据（体积大，自行准备）
+clean_message/*.json
+
+# ===== IDE =====
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ===== 系统文件 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ===== 日志 =====
+*.log
